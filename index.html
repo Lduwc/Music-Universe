@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta charset="viewport" content="width=device-width, initail-scale=1.0 ">
     <title>Music Universe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">   
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
 </head>
@@ -12,31 +15,91 @@
         <div id="header">
             <!--Begin: Nav  -->
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Library</a></li>
-                <li><a href="">Playlist</a></li>
-                <li><a href="">Feedback</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#music">Playlist</a></li>
+                <li><a href ="main.html">FEEDBACK</a>
+                        
+                </li>
             </ul>
-            <!-- End: Nav -->
 
-            <!-- Begin: search button -->
+            <!-- End: Nav -->
             <div class="search-btn">
-                <i class="search-icon ti-search"></i>
-            </div>
-        </div>       
+
+            <form action="" id="search-box">
+
+              <input type="text" id="search-text" placeholder="Tìm kiếm nghệ sĩ,bài hát,lời bài hát..." required >
+                <button id="search-btn"><i class="ti-search"></i></button>
+
+                               </form>
+
+                            </div>
+        </div>      
+            
+    
         <div id="slider">
 
         </div>    
 
 
-        <div id="content">
+        <div id="music">
+            <div class="music-thumb">
+                <img src="https://o.vdoc.vn/data/image/2023/12/27/loi-bai-hat-buon-hay-vui-vsoul-700.jpg" alt="">
+            </div>
+            <div class="Playlist">
+                <a href="index1.html" target="_blank"> PlayList</a>
+            </div>
+     
+
+            <audio src="./assets/musics/buonhayvui.mp3" id="song"></audio>
+            <div class="controls">
+                <div class="play-backward">
+                    <ion-icon class="ti-control-backward">
+
+                    </ion-icon>
+                </div>
+
+                <div class="play">
+                    <div class="player-inner">
+                        <ion-icon class="ti-control-play"></ion-icon>
+                    </div>
+                    
+                </div>
+                <div class="play-forward">
+                    <ion-icon class="ti-control-forward">
+
+                </ion-icon>
+                </div>
+                
+
+
+            </div>
+            </div>
+
 
         </div>
 
 
         <div id="footer">
-
+            <div class="footer-container">
+                <div class="footer-section">
+                  <h2>About Us</h2>
+                  <p> Do you like it? Could you please fill out this feedback form?</p>
+                </div>
+          
+                <div class="footer-section">
+                  <h2>Contact Us</h2>
+                  <p>Email: linhan00125@gmail.com<br>Phone: 0837558368</p>
+                </div>
+          
+                <div class="footer-section">
+                  <h2>Follow Us</h2>
+                  <ul class="social-links">
+                    <li><a href="https://www.facebook.com/lduwc1109?locale=vi_VN" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/hnil.www0123/" target="_blank">Instagram</a></li>
+                  </ul>
+                </div>
+              </div>
         </div>    
-    </div>    
+        
 </body>
 </html>
